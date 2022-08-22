@@ -1,7 +1,14 @@
 section {
-  background-color: lightblue;
+  opacity: .8;
+  background-color: lightgrey;
+  transition: .8s;
+}
+
+section:hover {
+  opacity: 1;
 }
 body {
+  background-image: url(https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
