@@ -1,0 +1,10 @@
+#eka {
+  margin: 10px;
+  float: left;
+}
+
+#toka {
+  margin: 10px;
+  clear: both;
+  float: right;
+}
