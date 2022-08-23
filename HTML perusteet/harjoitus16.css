@@ -6,47 +6,48 @@
 
 #eka {
   font-size: 10px;
+  color: red;
 
 }
 
 #toka {
   font-size: 20px;
-
+  color: blue;
 }
 
 #kolmas {
   font-size: 30px;
-
+  color: grey;
 }
 
 #neljäs {
   font-size: 50px;
-
+  color: brown;
 }
 
 #viides {
   font-size: 60px;
-
+  color: lightblue;
 }
 
 #kuudes {
   font-size: 50px;
-
+  color: lightgrey;
 }
 
 #seitsemäs {
   font-size: 40px;
-
+  color: pink;
 }
 
 #kahdeksas {
   font-size: 30px;
-
+  color: green;
 }
 
 #yhdeksäs {
   font-size: 20px;
-
+  color: purple;
 }
 
 #tokanimi {
