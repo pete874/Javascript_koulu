@@ -1,0 +1,44 @@
+/* colors paletton.com */
+
+body {
+  width: 800px;
+  margin: auto;
+}
+
+header, footer {
+  background-color: #FFFACD;
+  padding: 5px 0px 10px 10px;
+}
+
+header > h1 {
+  color: #B7AE5F;
+}
+
+nav {
+  width: 200px;
+  margin: auto;
+  background-color: #DBD494;
+}
+
+main {
+
+}
+
+section {
+  background-color: #DBD494;
+  width: 620px;
+}
+
+aside {
+  float: right;
+  background-color: #B7AE5F;
+  height: 478px;
+}
+
+aside > p {
+  padding: 10px;
+}
+
+section, aside {
+  padding: 5px 0px 10px 10px;
+}

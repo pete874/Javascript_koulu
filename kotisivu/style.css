@@ -1,0 +1,33 @@
+/*colors paletton.com coolors.com */
+body{
+  background-color: #9B8FAE;
+}
+header {
+  background-color: #C4BDCF;
+
+}
+header > h1 {
+  padding: 10px;
+}
+
+nav {
+  width: 300px;
+  margin: auto;
+  background-color: #7B6995;
+}
+ nav > a {
+   margin-left: 20px;
+ }
+
+ section {
+   padding: 10px;
+   width: 900px;
+   background-color: #E2E0E6;
+ }
+
+ aside {
+   float: right;
+   height: 500px;
+   width: 200px;
+   background-color: #7E6C99
+ }
