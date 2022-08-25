@@ -1,0 +1,42 @@
+#logo {
+  margin: auto;
+  display: block;
+}
+
+header > p, h1, h5 {
+  text-align: center;
+}
+header > hr {
+  height: 1px;
+  background-color: blue;
+  border: none;
+}
+ul > h5 {
+  float: left;
+}
+
+.listakuvat{
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#teksti {
+  color: grey;
+}
+footer {
+  text-align: center;
+}
+
+footer > p {
+  color: grey;
+}
+
+main > p {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    background-color: lightgrey;
+    border-radius: 10px;
+  }
+}
