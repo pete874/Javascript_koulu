@@ -15,6 +15,7 @@
 
     </header>
     <main>
+      <article>
     <section>
       <ul>
         <li><p><img src="number1.png" alt="" class="listakuvat"><b>Ensimmäinen Pointti</b></p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -38,6 +39,41 @@
       </ul>
 
     </section>
+
+      <form class="lomake">
+    <label for="etunimi">Etunimi: </label>
+    <input type="text" id="enimi" placeholder="Syötä etunimesi..."><br/>
+    <label for="salasana">Salana: </label>
+    <input type="password" id="ssana" placeholder="Syötä salasanasi..."><br/>
+    <label for="oppitunti">Suosikkitunti: </label>
+    <select id="oppitunti">
+      <option value=""></option>
+      <option value="YTO">YTO-aineet</option>
+      <option value="Ohjelmointi">Ohjelmointi</option>
+      <option value="Tivi">Tieto- ja viestintätekniikka</option>
+      <option value="Ruoka">Ruokatunti</option>
+    </select><br/>
+    <label for="Suosikkiope">Valitse suosikkiopettajasi: </label><br/>
+    <input type="radio" id="Eeva" name="ope">
+    <label for="Eeva">Eeva</label><br/>
+    <input type="radio" id="Jyri" name="ope">
+    <label for="Jyri">Jyri</label><br/>
+    <input type="radio" id="Vesa" name="ope">
+    <label for="Vesa">Vesa</label><br/>
+    <label for="Suosikkiruoka">Valitse suosikkiruokasi: </label><br/>
+    <input type="checkbox" id="pyttipannu" name="pytti">
+    <label for="pytti">Pyttipannu</label><br/>
+    <input type="checkbox" id="hernekeitto" name="herne">
+    <label for="herne">Hernekeitto</label><br/>
+    <input type="checkbox" id="kaalilaatikko" name="kaali">
+    <label for="kaali">Kaalilaatikko</label><br/>
+    <label for="mielipide">Anna mielipiteesi:</label><br/>
+    <textarea name="mielipide" rows="8" cols="50"></textarea>
+    <button type="button" name="button" onclick="tarkista()">Lähetä</button>
+
+
+  </article>
+
     <p id="teksti"><img src="testimonial.png" alt="" class="listakuvat">sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMake</p>
 
     </main>

@@ -3,6 +3,24 @@
   display: block;
 }
 
+main {
+  margin: auto;
+
+}
+form {
+  position: fixed;
+   top: 400px;
+   right: 10px;
+   width: 400px;
+   margin-right: 200px;
+   background-color: lightgrey;
+   border-radius: 10px;
+
+}
+
+section {
+  width: 700px;
+}
 header > p, h1, h5 {
   text-align: center;
 }
@@ -34,9 +52,69 @@ main > p {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1410px) {
+  main {
+
+  }
+  form {
+   position: inherit;
+   background-color: lightgrey;
+   border-radius: 10px;
+
+  }
   section {
     background-color: lightgrey;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  main  {
+
+
+  }
+
+  section {
+
+    width: 600px;
+  }
+
+  form {
+    width: 250px;
+  }
+  textarea {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main  {
+
+
+  }
+
+  section {
+
+    width: 500px;
+  }
+
+  form {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  main  {
+
+
+  }
+
+  section {
+
+    width: 400px;
+  }
+
+  textarea {
+    width: 235px;
   }
 }
