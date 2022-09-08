@@ -1,0 +1,38 @@
+main {
+  background-color: lightblue;
+  border-radius: 10px;
+  height: 500px;
+  width: 400px;
+
+
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+
+}
+
+table {
+  margin-left: 10px;
+}
+
+td {
+  width: 50%;
+  margin: 10px;
+
+}
+
+
+textarea {
+  border-radius: 10px;
+}
+
+.text {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+select {
+  border-radius: 5px;
+}
