@@ -20,3 +20,14 @@ function liitaSanat() {
   t3 = "tylsä";
   console.log(t1 + t2 + t3);
 }
+
+function attribuutti(nimi) {
+  var t1 = " on";
+  var t2 = " tylsä";
+  console.log(nimi + t1 + t2);
+}
+
+function laskeYhteen(luku1, luku2) {
+  console.log(luku1 + luku2);
+
+}
