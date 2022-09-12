@@ -12,3 +12,11 @@ console.log("Erotus on:" + erotus);
 console.log("Osamäärä on:" + osamaara);
 console.log("Tulo on:" + tulo);
 }
+
+function liitaSanat() {
+  var t1, t2 ,t2;
+  t1 = "Petri ";
+  t2 = "on ";
+  t3 = "tylsä";
+  console.log(t1 + t2 + t3);
+}
