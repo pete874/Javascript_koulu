@@ -56,3 +56,25 @@ function tehtava3() {
 }
 
 // Tehtävä 4
+
+function tehtava4() {
+  var luku1 = document.getElementById('t4luku1').value
+  if (luku1 < 16) {
+    document.getElementById('v5').innerHTML = "Saat ajaa polkupyörää"
+  } else if (luku1 >= 16 && luku1 < 18) {
+    document.getElementById('v5').innerHTML = "Saat ajaa polkupyörää ja mopoa"
+  } else {document.getElementById('v5').innerHTML = "Saat ajaa polkupyörää, mopoa ja autoa"}
+}
+
+// Tehtävä 5
+
+function tehtava5() {
+  var luku1 = document.getElementById('t5luku1').value;
+  if (luku1 == "englanti") {
+    document.getElementById('v6').innerHTML = "Hello World";
+  } else if (luku1 == "ruotsi") {
+    document.getElementById('v6').innerHTML = "Hej världen";
+  } else {document.getElementById('v6').innerHTML = "Hola mundo"
+
+  }
+}
