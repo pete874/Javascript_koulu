@@ -1,0 +1,19 @@
+body {
+  width: 90%;
+  padding: 20px;
+}
+
+
+article {
+  margin: 20px;
+  float: left;
+  height: 300px;
+  width: 400px;
+
+
+  background-color: lightblue;
+}
+
+div {
+  margin: 20px;
+}
