@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="t1lomake.js">
+
+    </script>
+    <link rel="stylesheet" href="t1lomake.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <table>
+        <tr>
+          <td>Anna etunimesi:</td>
+          <td><input type="text" id="enimi" value=""></td>
+        </tr>
+        <tr>
+          <td>Anna sukunimesi:</td>
+          <td><input type="text" id="snimi" value=""></td>
+        </tr>
+      </table>
+      <hr>
+      <label for="">Tulin tänään kouluun:</label>
+      <br>
+      <table>
+        <tr>
+          <td><input type="radio" class="radio" name="kouluun" value="Jalan"></td>
+          <td><label for="">Jalan</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" class="radio" name="kouluun" value="Autolla"></td>
+          <td><label for="">Autolla</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" class="radio" name="kouluun" value="Junalla"></td>
+          <td><label for="">Junalla</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" class="radio" name="kouluun" value="Bussilla"></td>
+          <td><label for="">Bussilla</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" class="radio" name="kouluun" value="Mopolla"></td>
+          <td><label for="">Mopolla</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" class="radio" name="kouluun" value="Uiden"></td>
+          <td><label for="">Uiden</label></td>
+        </tr>
+      </table>
+      <hr>
+      <label for="">Lempituntini koulussa on:</label>
+      <br>
+      <select class="" id="aineet">
+        <option value="">(Valitse alta vaihtoehto)</option>
+        <option value="Tietotekniikka">Tietotekniikka</option>
+        <option value="Kielet">Kielet</option>
+        <option value="Matematiikka">Matematiikka</option>
+        <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
+        <option value="Ruokatunti">Ruokatunti</option>
+
+      </select>
+      <br>
+
+      <button type="button" name="button" onclick="vastaus()">Submit</button>
+
+    </form>
+    <p id="v1"></p>
+
+
+  </body>
+</html>
