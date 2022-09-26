@@ -8,17 +8,17 @@ function tehtava1() {
   document.getElementById('v1').innerHTML = "annoit luvut: " + luku1 + " " + luku2 + " " + luku3;
   if (luku1 < luku2 && luku1 < luku3) {
     if (luku2 < luku3) {
-      document.getElementById('v2').innerHTML = "luvut oikeassa järjestysessä " + luku1 + " " + luku2 + " " + luku3;
-    } else {document.getElementById('v2').innerHTML = "luvut oikeassa järjestysessä " + luku1 + " " + luku3 + " " + luku2}
+      document.getElementById('v2').innerHTML = "luvut oikeassa järjestyksessä " + luku1 + " " + luku2 + " " + luku3;
+    } else {document.getElementById('v2').innerHTML = "luvut oikeassa järjestyksessä " + luku1 + " " + luku3 + " " + luku2}
   } else if (luku2 < luku1 && luku2 < luku3) {
-    if (luku1 < luku3) {document.getElementById('v2').innerHTML = "luvut oikeassa järjestysessä " + luku2 + " " + luku1 + " " + luku3;
-  } else {document.getElementById('v2').innerHTML = "luvut oikeassa järjestysessä " + luku2 + " " + luku3 + " " + luku1}
+    if (luku1 < luku3) {document.getElementById('v2').innerHTML = "luvut oikeassa järjestyksessä " + luku2 + " " + luku1 + " " + luku3;
+  } else {document.getElementById('v2').innerHTML = "luvut oikeassa järjestyksessä " + luku2 + " " + luku3 + " " + luku1}
   }
   else if (luku3 < luku1 && luku3 < luku2) {
     if(luku1 < luku2) {
-      document.getElementById('v2').innerHTML = "luvut oikeassa järjestysessä " + luku3 + " " + luku1 + " " + luku2;
+      document.getElementById('v2').innerHTML = "luvut oikeassa järjestyksessä " + luku3 + " " + luku1 + " " + luku2;
     } else {
-      document.getElementById('v2').innerHTML = "luvut oikeassa järjestysessä " + luku3 + " " + luku2 + " " + luku1;
+      document.getElementById('v2').innerHTML = "luvut oikeassa järjestyksessä " + luku3 + " " + luku2 + " " + luku1;
     }
   }
 }
