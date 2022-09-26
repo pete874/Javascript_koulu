@@ -114,3 +114,15 @@ var jarmo = new OsoiteRekisteri("Jarmo", "Peipponen", "Kyyhkytie 3", "07540", "T
 function tiedot() {
   heikki.tiedot();
 }
+
+
+// Koodaushaasteita1 / 5. Haaste
+
+function haaste5() {
+  var sana = document.getElementById('luku8').value;
+  var jatko = Array.from(sana);
+  var string = jatko.sort();
+  var lopullinen = string.join('');
+
+  document.getElementById('v5').innerHTML = lopullinen;
+}
