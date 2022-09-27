@@ -93,7 +93,7 @@ function OsoiteRekisteri(etunimi, sukunimi, lahiosoite, postinumero, postitoimip
   this.postitoimipaikka = postitoimipaikka;
   this.puhelin = puhelin;
   this.sahkoposti = sahkoposti;
-  this.tiedot = NaytaTiedot;
+  this.tieto = NaytaTiedot;
 }
 
 function NaytaTiedot() {
@@ -112,7 +112,27 @@ var janne = new OsoiteRekisteri("Janne", "Linnonmaa", "Maatie 2", "03450", "Espo
 var jarmo = new OsoiteRekisteri("Jarmo", "Peipponen", "Kyyhkytie 3", "07540", "Tuusula", "0654894", "jarmo.peipponen@google.com");
 
 function tiedot() {
-  heikki.tiedot();
+  var olio = document.getElementById('luku9').value;
+
+  switch(olio) {
+    case "heikki":
+    case "Heikki":
+    heikki.tieto();
+    break;
+
+    case "janne":
+    case "Janne":
+    janne.tieto();
+    break;
+
+    case "jarmo":
+    case "Jarmo":
+    jarmo.tieto();
+    break;
+
+    default:
+    document.getElementById('v4').innerHTML = "tietoa ei löytynyt"
+  }
 }
 
 
