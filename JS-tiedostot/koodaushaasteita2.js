@@ -1,5 +1,25 @@
 // koodaushaasteita2 / 1. haaste
+function haaste1() {
+  var array = [];
 
+  for (let i = 100; i <= 1000; i++) {
+    let numeromaara = i.toString().length;
+    let numero = 0;
+    let vali = i;
+
+    while (vali > 0) {
+      let jaljella = vali % 10;
+      numero += jaljella ** numeromaara;
+      vali = parseInt(vali / 10);
+    }
+
+    if (numero == i) {
+      array.push(i);
+    }
+ }
+ document.getElementById('v1').innerHTML = array;
+ console.log(array);
+}
 
 
 
