@@ -142,7 +142,7 @@ function haaste5() {
   var sana = document.getElementById('luku8').value;
   var jatko = Array.from(sana);
   var string = jatko.sort();
-  var lopullinen = string.join('');
+  var lopullinen = string.join("");
 
   document.getElementById('v5').innerHTML = lopullinen;
 }
