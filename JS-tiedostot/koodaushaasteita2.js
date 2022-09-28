@@ -12,9 +12,12 @@ function haaste2() {
 }
 
 //koodaushaasteita2 / 3. haaste
+//tein kaksi erilaista tapaa
+
 function haaste3() {
 var string = "ohjelmointi on hauskaa";
 var string2 = document.getElementById('luku3').value;
+
 /* const asearch = "a";
 const akorvataan = "4";
 const esearch = "e";
