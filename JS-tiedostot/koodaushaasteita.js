@@ -146,3 +146,24 @@ function haaste5() {
 
   document.getElementById('v5').innerHTML = lopullinen;
 }
+
+// Koodaushaasteita1 / 6. Haaste
+
+function haaste6() {
+  var nimi = document.getElementById('luku10').value;
+  var pistemaara = document.getElementById('luku11').value;
+
+  if (pistemaara <50) {
+    document.getElementById('v6').innerHTML = nimi + " Hylätty";
+  } else if (pistemaara < 60) {
+    document.getElementById('v6').innerHTML = nimi + " T1";
+  } else if (pistemaara < 70) {
+    document.getElementById('v6').innerHTML = nimi + " T2";
+  } else if (pistemaara < 80) {
+    document.getElementById('v6').innerHTML = nimi + " H3";
+  } else if (pistemaara < 90) {
+    document.getElementById('v6').innerHTML = nimi + " H4";
+  } else if (pistemaara <= 100) {
+    document.getElementById('v6').innerHTML = nimi + " K5";
+  } else {document.getElementById('v6').innerHTML = "Väärä pistemäärä";}
+}
