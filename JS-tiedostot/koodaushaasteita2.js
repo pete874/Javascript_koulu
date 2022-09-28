@@ -15,7 +15,7 @@ function haaste2() {
 function haaste3() {
 var string = "ohjelmointi on hauskaa";
 var string2 = document.getElementById('luku3').value;
-const asearch = "a";
+/* const asearch = "a";
 const akorvataan = "4";
 const esearch = "e";
 const ekorvataan = "3";
@@ -35,11 +35,19 @@ const vastaus00 = string2.split(asearch).join(akorvataan);
 const vastaus11 = vastaus00.split(esearch).join(ekorvataan);
 const vastaus22 = vastaus11.split(osearch).join(okorvataan);
 const vastaus33 = vastaus22.split(isearch).join(ikorvataan);
-const vastaus44 = vastaus33.split(ssearch).join(skorvataan);
+const vastaus44 = vastaus33.split(ssearch).join(skorvataan); */
 
-console.log(vastaus4)
-document.getElementById('v3').innerHTML = vastaus4;
-document.getElementById('v33').innerHTML = vastaus44;
+const a = "a";
+const e = "e";
+const o = "o";
+const i = "i";
+const s = "s";
+var vastaus6 = string.replaceAll(a, "4").replaceAll(e, "3").replaceAll(o, "0").replaceAll(i, "1").replaceAll(s, "5");
+var vastaus7 = string2.replaceAll(a, "4").replaceAll(e, "3").replaceAll(o, "0").replaceAll(i, "1").replaceAll(s, "5");
+
+console.log(vastaus6)
+document.getElementById('v3').innerHTML = vastaus6;
+document.getElementById('v33').innerHTML = vastaus7;
 }
 
 //koodaushaasteita2 / 4. haaste
