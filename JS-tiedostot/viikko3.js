@@ -23,3 +23,30 @@ function tehtava1() {
    console.log(tulos);
    document.getElementById('v2').innerHTML = tulos;
  }
+
+ // Tehtävä 3
+
+ function tehtava3() {
+   var sana = document.getElementById('luku3').value;
+   if (sana.indexOf("ö") >= 0 || sana.indexOf("Ö") >= 0) {
+     document.getElementById('v3').innerHTML = "on";
+   } else {document.getElementById('v3').innerHTML = "ei ole";}
+ }
+
+//Tehtävä 4
+
+function tehtava4() {
+  var numero = document.getElementById('luku4').value;
+  var tulos = 1;
+  if (numero < 0) {
+    document.getElementById('v4').innerHTML = "0"
+  } else if (numero == 1) {
+    document.getElementById('v4').innerHTML = "1"
+  } else {
+    for (let i = 1; i <= numero; i++) {
+      tulos = tulos * i;
+    } document.getElementById('v4').innerHTML = tulos;
+  }
+
+
+}
