@@ -47,6 +47,25 @@ function tehtava4() {
       tulos = tulos * i;
     } document.getElementById('v4').innerHTML = tulos;
   }
-
-
 }
+
+// Tehtävä 5
+
+function tehtava5() {
+  var numerot = "..........".length;
+  var array = [];
+  for(let i = ".".length; i <= (numerot*numerot); i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      array.push(" hipheijaa");
+    } else if (i % 5 == 0) {
+      array.push(" heijaa");
+    } else if (i % 3 == 0) {
+      array.push(" hip");
+    } else {array.push(i);}
+
+  }
+  document.getElementById('v5').innerHTML = array;
+  console.log(array);
+}
+
+// Tehtävä 6
