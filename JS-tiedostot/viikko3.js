@@ -122,8 +122,180 @@ function tehtava9() {
 function tehtava10() {
   var sana = document.getElementById('luku15').value;
   var kirjaimet = ["a", "b", "c", "d", "e", "f", "g", "h" ,"i" ,"j" ,"k" , "l" , "m" , "n" , "o" , "p" , "q" , "r", "s" , "t" , "u", "v" , "x" , "y" , "z"]
+  var vali = [];
   var array = Array.from(sana);
-  var tulos = array.join(kirjaimet[Math.floor((Math.random()*kirjaimet.length))]);
+
+  for (let i = 0; i < sana.length; i++) {
+    vali.push(array[i])
+    vali.push(kirjaimet[Math.floor((Math.random()*kirjaimet.length))])
+
+  }
+
+  var tulos = vali.join("")
   console.log(tulos);
   document.getElementById('v10').innerHTML = tulos;
+}
+
+
+// Tehtävä 11
+
+function tehtava11() {
+  var pienempi = parseInt(document.getElementById('luku16').value);
+  var suurempi = parseInt(document.getElementById('luku17').value);
+  var vali1 = [];
+  var vali2 = [];
+  var tulos1 = 0;
+  var tulos2 = 0
+
+  for (let i = pienempi; i <= suurempi; i++) {
+    if (i % 2 == 0) {
+      vali1.push(i);
+      tulos1 += i;
+    } else {
+      vali2.push(i);
+      tulos2 += i;
+    }
+  }
+  console.log(vali1)
+  console.log(vali2)
+  document.getElementById('v11').innerHTML = "Parilliset numerot ovat " + vali1 + " ja niiden summa on " + tulos1;
+  document.getElementById('v12').innerHTML = "Parittomat numerot ovat " + vali2 + " ja niiden summa on " + tulos2;
+}
+
+// Viikon 3 toiset tehtävät alkaa tästä:
+
+//Tehtävä 1
+
+function tehtava12() {
+  var sana = document.getElementById('luku18').value;
+  var pisteet = 0;
+  for (let i = 0; i < sana.length; i++) {
+    switch (sana[i]) {
+      case "a":
+      case "A":
+      case "e":
+      case "E":
+      case "i":
+      case "I":
+      case "n":
+      case "N":
+      case "s":
+      case "S":
+      case "t":
+      case "T":
+      pisteet++
+      break;
+
+      case "o":
+      case "O":
+      case "ä":
+      case "Ä":
+      case "k":
+      case "K":
+      case "l":
+      case "L":
+      pisteet+=2
+      break;
+
+      case "u":
+      case "U":
+      case "m":
+      case "M":
+      pisteet+=3
+      break;
+
+      case "y":
+      case "Y":
+      case "h":
+      case "H":
+      case "j":
+      case "J":
+      case "p":
+      case "P":
+      case "r":
+      case "R":
+      case "v":
+      case "V":
+      pisteet+=4
+      break;
+
+      case "ö":
+      case "Ö":
+      case "d":
+      case "D":
+      pisteet+=7
+      break;
+
+      case "b":
+      case "B":
+      case "f":
+      case "F":
+      case "g":
+      case "G":
+      pisteet+=8
+      break;
+
+      case "c":
+      case "C":
+      pisteet+=10
+      break;
+
+      default:
+      pisteet+=12
+      }
+  }
+  document.getElementById('v13').innerHTML = "Sanasta " + sana + " Saa " + pisteet + " pistettä."
+}
+
+// Tehtävä 13
+
+function tehtava13() {
+  var numerot = [];
+  for (let i = 0; i < 7; i++) {
+    numerot.push(Math.floor(Math.random() * 40)+1)
+  }
+  numerot.sort();
+  document.getElementById('v14').innerHTML = numerot;
+}
+
+// Tehtävä 14
+
+function tehtava14() {
+  var sisalto = [["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K" , "L"], ["M", "N", "O", "P"], ["Q", "R", "S", "T"]];
+  var table = '<table border=10>';
+  for (let i = 0; i < sisalto.length; i++) {
+    table += "<tr>"
+    for (let j = 0; j < sisalto[i].length; j++) {
+      table += "<td>" + sisalto[i][j] + "</td>";
+    }
+    table += "</tr>"
+  } table += "</table>"
+  document.getElementById('v15').innerHTML = table;
+}
+
+// Tehtävä 15
+
+function tehtava15() {
+  var korttipakka = [];
+  var ikonit = ["♡", "♤", "♢", "♣"]
+  var numerot = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+  var luku = 0;
+  for (let i = 0; i < ikonit.length; i++) {
+    for (let j = 0; j < numerot.length; j++) {
+      if(i == ikonit.length - 1 && j == numerot.length - 1) {
+        korttipakka[luku] = ikonit[i] + numerot[j];
+      } else {
+        korttipakka[luku] = ikonit[i] + numerot[j];
+        luku++;
+      }
+    }
+  }
+
+  var tulos = [];
+  for (let k = 0; k < 5; k++) {
+    var vali = korttipakka[Math.floor(Math.random() * 52)]
+    tulos[k] = vali;
+  }
+
+  document.getElementById('v16').innerHTML = tulos;
 }
