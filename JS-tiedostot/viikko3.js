@@ -69,3 +69,61 @@ function tehtava5() {
 }
 
 // Tehtävä 6
+
+
+function tehtava6() {
+    var tulos = [];
+    for (let i = 1; i <= 10; i++) {
+      tulos.push(i);
+    }
+    var tulos2 = tulos.join(" ");
+    document.getElementById('v6').innerHTML = tulos2
+}
+
+// Tehtävä 7
+
+function tehtava7() {
+    var tulos = 0;
+    for (let i = 0; i <= 10; i++) {
+      tulos += i;
+
+    } document.getElementById('v7').innerHTML = tulos ;
+}
+
+// Tehtävä 8
+
+function tehtava8() {
+  var luku1 = document.getElementById('luku8').value;
+  var luku2 = document.getElementById('luku9').value;
+  var tulos = Math.pow(luku1, luku2)
+  document.getElementById('v8').innerHTML = tulos
+}
+
+// Tehtävä 9
+
+function tehtava9() {
+  var taulukko = [];
+  taulukko[0] = document.getElementById('luku10').value;
+  taulukko[1] = document.getElementById('luku11').value;
+  taulukko[2] = document.getElementById('luku12').value;
+  taulukko[3] = document.getElementById('luku13').value;
+  taulukko[4] = document.getElementById('luku14').value;
+
+  var tulos1 = taulukko.sort();
+  var tulos2 = tulos1.shift();
+  var tulos3 = tulos1.pop();
+
+
+  document.getElementById('v9').innerHTML = tulos2 + " on pienin ja " + tulos3 + " on suurin";
+}
+
+// Tehtävä 10
+
+function tehtava10() {
+  var sana = document.getElementById('luku15').value;
+  var kirjaimet = ["a", "b", "c", "d", "e", "f", "g", "h" ,"i" ,"j" ,"k" , "l" , "m" , "n" , "o" , "p" , "q" , "r", "s" , "t" , "u", "v" , "x" , "y" , "z"]
+  var array = Array.from(sana);
+  var tulos = array.join(kirjaimet[Math.floor((Math.random()*kirjaimet.length))]);
+  console.log(tulos);
+  document.getElementById('v10').innerHTML = tulos;
+}
