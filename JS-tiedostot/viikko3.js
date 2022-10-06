@@ -109,7 +109,7 @@ function tehtava9() {
   taulukko[3] = parseInt(document.getElementById('luku13').value);
   taulukko[4] = parseInt(document.getElementById('luku14').value);
 
-  taulukko.sort((a, b) => {if (a < b) {return -1} if (a > b) {return 1} return 0});
+  taulukko.sort((a, b) => {if (a < b) {return -1} if (a > b) {return 1} return 0});   // (a, b) => {return a - b} tekee saman asian??
   var tulos2 = taulukko.shift();
   var tulos3 = taulukko.pop();
 
@@ -257,7 +257,7 @@ function tehtava13() {
     numerot.push(tarkistus)
   }
   }
-  numerot.sort((a, b) => {if (a < b) {return -1} if (a > b) {return 1} return 0});
+  numerot.sort((a, b) => {if (a < b) {return -1} if (a > b) {return 1} return 0});   // (a, b) => {return a - b} tekee saman asian??
   document.getElementById('v14').innerHTML = numerot;
 }
 
