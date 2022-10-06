@@ -103,15 +103,15 @@ function tehtava8() {
 
 function tehtava9() {
   var taulukko = [];
-  taulukko[0] = document.getElementById('luku10').value;
-  taulukko[1] = document.getElementById('luku11').value;
-  taulukko[2] = document.getElementById('luku12').value;
-  taulukko[3] = document.getElementById('luku13').value;
-  taulukko[4] = document.getElementById('luku14').value;
+  taulukko[0] = parseInt(document.getElementById('luku10').value);
+  taulukko[1] = parseInt(document.getElementById('luku11').value);
+  taulukko[2] = parseInt(document.getElementById('luku12').value);
+  taulukko[3] = parseInt(document.getElementById('luku13').value);
+  taulukko[4] = parseInt(document.getElementById('luku14').value);
 
-  var tulos1 = taulukko.sort();
-  var tulos2 = tulos1.shift();
-  var tulos3 = tulos1.pop();
+  taulukko.sort((a, b) => {if (a < b) {return -1} if (a > b) {return 1} return 0});
+  var tulos2 = taulukko.shift();
+  var tulos3 = taulukko.pop();
 
 
   document.getElementById('v9').innerHTML = tulos2 + " on pienin ja " + tulos3 + " on suurin";
