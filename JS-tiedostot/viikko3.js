@@ -251,10 +251,13 @@ function tehtava12() {
 
 function tehtava13() {
   var numerot = [];
-  for (let i = 0; i < 7; i++) {
-    numerot.push(Math.floor(Math.random() * 40)+1)
+  while (numerot.length < 7) {
+    var tarkistus = Math.floor(Math.random() * 40 + 1);
+    if (numerot.indexOf(tarkistus) == -1) {
+    numerot.push(tarkistus)
   }
-  numerot.sort();
+  }
+  numerot.sort((a, b) => {if (a < b) {return -1} if (a > b) {return 1} return 0});
   document.getElementById('v14').innerHTML = numerot;
 }
 
