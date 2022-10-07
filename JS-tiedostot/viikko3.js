@@ -279,26 +279,17 @@ function tehtava14() {
 // Tehtävä 15
 
 function tehtava15() {
-  var korttipakka = [];
-  var ikonit = ["♡", "♤", "♢", "♣"]
-  var numerot = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
-  var luku = 0;
-  for (let i = 0; i < ikonit.length; i++) {
-    for (let j = 0; j < numerot.length; j++) {
-      if(i == ikonit.length - 1 && j == numerot.length - 1) {
-        korttipakka[luku] = ikonit[i] + numerot[j];
-      } else {
-        korttipakka[luku] = ikonit[i] + numerot[j];
-        luku++;
-      }
-    }
-  }
+  var kasikortit = [];
+  var korttipakka = ["♡A", "♡2", "♡3", "♡4", "♡5", "♡6", "♡7", "♡8", "♡9", "♡10", "♡J", "♡Q", "♡K",
+                     "♤A", "♤2", "♤3", "♤4", "♤5", "♤6", "♤7", "♤8", "♤9", "♤10", "♤J", "♤Q", "♤K",
+                     "♢A", "♢2", "♢3", "♢4", "♢5", "♢6", "♢7", "♢8", "♢9", "♢10", "♢J", "♢Q", "♢K",
+                     "♣A", "♣2", "♣3", "♣4", "♣5", "♣6", "♣7", "♣8", "♣9", "♣10", "♣J",  "♣Q", "♣K"]
 
-  var tulos = [];
-  for (let k = 0; k < 5; k++) {
-    var vali = korttipakka[Math.floor(Math.random() * 52)]
-    tulos[k] = vali;
+  while (kasikortit.length < 5) {
+    var tarkistus = korttipakka[Math.floor(Math.random() * 52)];
+    if (kasikortit.indexOf(tarkistus) == -1) {
+    kasikortit.push(tarkistus)
   }
-
-  document.getElementById('v16').innerHTML = tulos;
+}
+  document.getElementById('v16').innerHTML = kasikortit;
 }
